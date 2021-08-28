@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Resultado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Resultado</h2>
+
+@using (Html.BeginForm("Estudiantes","Notas", FormMethod.Post)){
+
+
+<h1>Nombre: @ViewBag.Nombre </h1>
+<h1>Total Laboratios: @ViewBag.TotalL </h1>
+<h1>Total Parciales: @ViewBag.TotalP </h1>
+<h1>Nota Final: @ViewBag.NotaF </h1>
+
+<input type="submit">
+
+}

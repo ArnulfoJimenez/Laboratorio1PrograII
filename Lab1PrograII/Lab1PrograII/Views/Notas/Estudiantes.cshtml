@@ -1,0 +1,58 @@
+﻿@model List<Lab1PrograII.Models.Tbl_NotasEstudiante>
+@{
+    ViewBag.Title = "Estudiantes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Estudiantes</h2>
+
+
+    <table class="table table-dark table-striped">
+
+
+        <thead>
+        <th>
+            Id
+        </th>
+        <th>
+            Nombre
+        </th>
+        <th>
+            Lab1
+        </th>
+        <th>
+            Lab2
+        </th>
+        <th>
+            Lab3
+        </th>
+        <th>
+            Par1
+        </th>
+        <th>
+            Par2
+        </th>
+        <th>
+            Par3
+        </th>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.NombreEstudiante</td>
+                    <td>@item.Lab1</td>
+                    <td>@item.Lab2</td>
+                    <td>@item.Lab3</td>
+                    <td>@item.Par1</td>
+                    <td>@item.Par2</td>
+                    <td>@item.Par3</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
